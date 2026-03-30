@@ -85,10 +85,10 @@ cd Car_price_prediction_project
 **2. Install dependencies**
 ```bash
 pip install -r requirements.txt
+```
 ---
 
 ## 📦 Requirements
-
 ```
 scikit-learn
 pandas
@@ -97,6 +97,7 @@ matplotlib
 seaborn
 ```
 
+---
 
 
 ## 👩‍💻 Author
