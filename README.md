@@ -1,110 +1,108 @@
-# Car Price Prediction
+# 🚗 Car Price Prediction
 
-##  Project Overview
-
-This project predicts the selling price of used cars using Machine Learning techniques.
-The model is trained on car dataset features such as year, fuel type, kilometers driven, and transmission type.
-
-The objective of this project is to build a regression model that can accurately estimate car prices based on given input features.
+A Machine Learning web application that predicts the **Selling Price of Second Hand Cars** based on various features like car name, year, km driven, fuel type, and more.
 
 ---
 
- ## Dataset
+## 📌 Project Overview
 
-This project uses a **Car Price Dataset**.
+The used car market is growing rapidly in India. Predicting the right price of a second-hand car is important for both buyers and sellers. This project uses Machine Learning regression algorithms to predict car prices based on car characteristics.
 
-🔗 Dataset Link:
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Python
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+
+---
+
+## 📊 Dataset
+
+- **Name:** Car Dekho Dataset
+- 🔗 Dataset Link:
 https://www.kaggle.com/datasets/jacksondivakarr/sample34
-
-The dataset contains information about used cars and their selling prices.
-
-### Features
-* name                   
-* year                   
-* km_driven             
-* fuel                    
-* seller_type             
-* transmission            
-* owner                   
-* seats                   
-* max_power (in bph)     
-* Mileage Unit           
-* Mileage                
-* Engine (CC)  
-
-**Target Variable**
-
-* Selling Price
----
-
-## Technologies Used
-
-* Python
-* NumPy
-* Pandas
-* Matplotlib
-* Scikit-learn
-* XgBoost
-* Jupyter Notebook
+- **Features:** 12 (Name, Year, KM Driven, Fuel, Seller Type, Transmission, Owner, Seats, Max Power, Engine CC, Mileage, Mileage Unit)
+- **Target:** Selling Price 
 
 ---
 
-## Machine Learning Model
-
-* XgBoost Regression Model
-
-### Steps Involved
-
-1. Train-Test Split
-2. Data Preprocessing
-3. Handling Categorical Data using One-Hot Encoding
-4. Model Training
-5. Model Prediction
-
----
-  
- ## How to Run the Project
-
-1️⃣ Clone the repository
-```
-git clone https://github.com/Mahakchoudhari/Car_price_prediction.git
-```
-2️⃣ Install dependencies
-```
-pip install -r requirements.txt
-```
-3️⃣ Run the notebook or Python script
-
----
-
-## Example Prediction
-
-Example Input:
-
-Year: 2015
-Present Price: 6.5
-Kms Driven: 35000
-Fuel Type: Petrol
-Transmission: Manual
-
-Output:
-
-** Predicted Car Price: ~₹X Lakhs
-
----
-
-## Project Structure
+## 🔍 Project Structure
 
 ```
-Car_price_prediction
+Car_price_prediction_project/
 │
-├── car data.csv
-├── Car_price_prediction.ipynb
-├── requirements.txt
+├── pricing.csv               ← Dataset
+├── car_price_prediction.ipynb ← Jupyter Notebook
+├── requirements.txt           ← Dependencies
 └── README.md
 ```
 
-## Author
+
+
+## 📈 Steps Followed
+
+1. **Data Preprocessing** — Dropped unnecessary columns, handled missing values, outlier handling using IQR Capping
+2. **EDA & Visualizations** — Histplot, Correlation Heatmap, Scatterplot, Boxplot
+3. **Encoding** — OneHotEncoder for all categorical features
+4. **Train Test Split** — 80/20 split
+5. **Feature Scaling** — StandardScaler on X and Y
+6. **Model Training** — Random Forest Regressor
+7. **Evaluation** — R2 Score, MAE, MSE, RMSE, Actual vs Predicted Plot
+8. **Model Comparison** — Linear Regression, Random Forest, SVR, Decision Tree, Polynomial Regression
+
+---
+
+## ✅ Model Performance
+
+| Metric | Score |
+|--------|-------|
+| R2 Score | 89% |
+| Cross Validation R2 | 89.04% |
+
+---
+
+## 🤖 Models Compared
+
+| Model | R2 Score |
+|-------|----------|
+| Random Forest | 88.81% |
+| Linear Regression | 75.80% |
+| Decision Tree | 79.30% |
+| SVR | 85.49% |
+| Polynomial Regression | 80.92% |
+
+---
+
+## 🚀 How to Run
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/Mahakchoudhari/Car_price_prediction_project.git
+cd Car_price_prediction_project
+```
+
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+---
+
+## 📦 Requirements
+
+```
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+```
+
+---
+
+## 👩‍💻 Author
 
 **Mahak Choudhari**
-Machine Learning Student
+B.Tech — Artificial Intelligence & Machine Learning (2nd Year)
+[GitHub](https://github.com/Mahakchoudhari)
+
+---
