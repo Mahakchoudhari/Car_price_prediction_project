@@ -103,7 +103,7 @@ seaborn
 ## 👩‍💻 Author
 
 **Mahak Choudhari**
-B.Tech — Artificial Intelligence & Machine Learning (2nd Year)
+B.Tech — Artificial Intelligence & Machine Learning 
 [GitHub](https://github.com/Mahakchoudhari)
 
 
